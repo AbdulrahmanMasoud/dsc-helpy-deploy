@@ -45,7 +45,7 @@ class ProfileController extends Controller
     {
         // 1- new obj
         $user = Auth::user();
-        $user->avatar = storage_path('app/public/uploads/avatars').'/'.$user->avatar;
+        $user->avatar = url('app/public/uploads/avatars').'/'.$user->avatar;
         // 2- Response Data
         return response()->json([
             'status' => true,
