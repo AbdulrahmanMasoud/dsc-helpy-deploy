@@ -110,6 +110,11 @@ class ProfileController extends Controller
      *                      description="You must add Password"
      *                  ),
      *                  @OA\Property(
+     *                      property="gender",
+     *                      type="string",
+     *                      enum={"-","female", "male"}
+     *                  ),
+     *                  @OA\Property(
      *                      property="country",
      *                      type="string",
      *                      description="Country Is Optional"
